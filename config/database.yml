@@ -6,15 +6,8 @@
 #
 default: &default
   adapter: postgresql
-  encoding: unicode
   pool: 5
   timeout: 5000
-  database: <%= ENV['SHOPMATIC_DATABASE_DBNAME'] %>
-  username: <%= ENV['SHOPMATIC_DATABASE_USERNAME'] %>
-  password: <%= ENV['SHOPMATIC_DATABASE_PASSWORD'] %>
-  host: <%= ENV['SHOPMATIC_DATABASE_HOST'] %>
-  port: <%= ENV['SHOPMATIC_DATABASE_PORT'] %>
-
 development:
   <<: *default
   database: lohono_stays

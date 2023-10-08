@@ -10,9 +10,9 @@ class VillasController < ApplicationController
   end
 
   def show
-    @villa_info = VillaService.get_villa_info(@villa, @start_date, @end_date)
+    villa_info = VillaService.get_villa_info(@villa, @start_date, @end_date)
 
-    render json: @villa_info
+    render json: villa_info
   end
 
   private

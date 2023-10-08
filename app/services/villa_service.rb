@@ -9,7 +9,6 @@ class VillaService
       villa_data.sort_by! { |villa| villa[:availability] ? 0 : 1 }
     end
 
-
     villa_data
   end
 

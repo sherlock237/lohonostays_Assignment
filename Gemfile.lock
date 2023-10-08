@@ -97,9 +97,13 @@ GEM
       timeout
     net-smtp (0.4.0)
       net-protocol
-    nokogiri (1.13.8)
+    nokogiri (1.13.10)
       mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
+    nokogiri (1.13.10-arm64-darwin)
+      racc (~> 1.4)
     pg (0.21.0)
+    racc (1.7.1)
     rack (1.6.13)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -190,6 +194,7 @@ GEM
 
 PLATFORMS
   ruby
+  universal-darwin-22
 
 DEPENDENCIES
   byebug

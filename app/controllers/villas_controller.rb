@@ -1,24 +1,28 @@
 class VillasController < ApplicationController
   before_action :set_villa, only: [:show]
+  before_action :parse_dates
 
   def index
-    start_date = params[:start_date]
-    end_date = params[:end_date]
-    sort_by = params[:sort_by] || 'availability'  # default sort by availability
+    sort_by = params[:sort_by]
+    villas_details = VillaService.get_villas(@start_date, @end_date, sort_by)
 
-    @villas = VillaService.get_villas(start_date, end_date, sort_by)
-
-    render json: @villas
+    render json: villas_details
   end
 
-  # GET /villas/:id
   def show
-    # Add logic here to calculate total rate and check availability for the entered dates
+    @villa_info = VillaService.get_villa_info(@villa, @start_date, @end_date)
+
+    render json: @villa_info
   end
 
   private
 
   def set_villa
     @villa = Villa.find(params[:id])
+  end
+
+  def parse_dates
+    @start_date = Date.parse(params[:start_date])
+    @end_date = Date.parse(params[:end_date])
   end
 end

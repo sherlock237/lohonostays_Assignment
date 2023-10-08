@@ -3,15 +3,16 @@ class Villa < ApplicationRecord
 
   def is_available?(start_date, end_date)
     (start_date...end_date).all? do |date|
-      calendars.where(date: date, availability: true).exists?
+      calendar_entries.where(date: date, available: true).exists?
     end
   end
 
   def average_price(start_date, end_date)
-    calendars.where(date: start_date...end_date).average(:price)
+    calendar_entries.where(date: start_date...end_date).average(:rate)
   end
 
   def total_price(start_date, end_date)
-    calendars.where(date: start_date...end_date).sum(:price)
+    sum_price = calendar_entries.where(date: start_date...end_date).sum(:rate)
+    sum_price + sum_price * 0.18  # Adding 18% GST
   end
 end

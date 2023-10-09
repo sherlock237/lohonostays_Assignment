@@ -13,8 +13,7 @@ class VillaService
   end
 
   def self.get_villa_info(villa, start_date, end_date)
-    availability = villa.is_available?(start_date, end_date)
-    total_price = villa.total_price(start_date, end_date)
+    availability, total_price = villa_info(start_date, end_date, villa)
 
     {
       id: villa.id,
@@ -25,9 +24,8 @@ class VillaService
   end
 
   def self.map_villa_data(start_date, end_date, villas)
-    villa_data = villas.map do |villa|
-      availability = villa.is_available?(start_date, end_date)
-      average_price = villa.average_price(start_date, end_date)
+    villas.map do |villa|
+      availability, average_price = villa_info(start_date, end_date, villa)
 
       {
         id: villa.id,
@@ -38,4 +36,14 @@ class VillaService
     end
   end
 
+  private
+
+  def self.villa_info(start_date, end_date, villa)
+    availability = villa.is_available?(start_date, end_date)
+    total_price = villa.total_price(start_date, end_date)
+    average_price = villa.average_price(start_date, end_date)
+    price = [total_price, average_price]
+
+    [availability].concat(price)
+  end
 end

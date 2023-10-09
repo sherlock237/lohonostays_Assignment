@@ -1,28 +1,65 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+###lohonostays Assignment.
 
-Things you may want to cover:
+* Ruby version -- 2.6.10
 
-* Ruby version
+###Getting Started
 
-* System dependencies
+* Clone this repository
 
-* Configuration
+Manually
 
-* Database creation
+* Please install ruby version -- 2.6.10
 
-* Database initialization
+* <tt>bundle install</tt> -- To install the necessary gem
 
-* How to run the test suite
+* <tt>rake db:create</tt>
 
-* Services (job queues, cache servers, search engines, etc.)
+* <tt>rake db:migrate</tt>
 
-* Deployment instructions
+* <tt>rake db:seed</tt>
 
-* ...
+* <tt>rails s</tt>
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+###Docker Build
+
+* <tt>docker build -t lohonostays .</tt>
+
+* <tt>docker run -p 3000:3000 lohonostays</tt>
+
+
+###Test Case Run
+
+* <tt>bundle exec rspec</tt>
+
+
+
+###Postman API Collection
+
+* Link: https://elements.getpostman.com/redirect?entityId=23321562-e80d3797-f6b1-4367-92fc-a3fcd660ef42&entityType=collection
+
+
+###Screen Shots of API and Response
+
+* API to Show average price and availability on a given dates and sort by price
+
+API
+https://drive.google.com/file/d/1D0-Q4QkXZNjO7LLMudCLpbS83cyWn7pc/view?usp=sharing
+
+Response
+https://drive.google.com/file/d/10y5zkrgIZt229qcfyEE9U1482v4dSM2e/view?usp=sharing
+
+* API to Show average price and availability on a given dates and sort by availability
+
+API
+https://drive.google.com/file/d/1w0DLRvn066tFCMMu54oBEkPZgxhtq8Do/view?usp=sharing
+
+Response
+https://drive.google.com/file/d/1gM_-I5qaUO6D57Wle5FNRVRb4szxTyjq/view?usp=sharing
+
+
+* API to show the total price and availability of a villa on a given dates
+
+https://drive.google.com/file/d/1taIgiluazLIbRo04MrzlvJ-jQWi2MkM_/view?usp=sharing

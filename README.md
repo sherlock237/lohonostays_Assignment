@@ -16,7 +16,7 @@ Manually
 
 * <tt>rake db:migrate</tt>
 
-* <tt>rake db:seed</tt> -- To Seed the database for 50 villas with each having calendar starting from 1-1-2023 to 31-12-2023 with randomized availability and randomized price between 30,000 to 50,000
+* <tt>rake db:seed_villas</tt> -- To Seed the database for 50 villas with each having calendar starting from 1-1-2023 to 31-12-2023 with randomized availability and randomized price between 30,000 to 50,000
 
 * <tt>rails s</tt>
 

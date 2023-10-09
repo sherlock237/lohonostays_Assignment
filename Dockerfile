@@ -1,7 +1,7 @@
 # Dockerfile.rails
 FROM ruby:2.6.10 AS lohonostays
 
-RUN apt-get update -qq && apt-get install -y nodejs postgresql-client ruby-foreman redis-server
+RUN apt-get update -qq && apt-get install -y nodejs
 ENV APP_RUN web
 ENV RAILS_ROOT ./app
 

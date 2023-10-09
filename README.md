@@ -1,6 +1,4 @@
-== README
-
-### ** lohonostays Assignment **.
+### lohonostays Assignment .
 
 * Ruby version -- 2.6.10
 
@@ -38,28 +36,28 @@ Manually
 
 ### Postman API Collection
 
-* Link: https://elements.getpostman.com/redirect?entityId=23321562-e80d3797-f6b1-4367-92fc-a3fcd660ef42&entityType=collection
+* Link:  https://elements.getpostman.com/redirect?entityId=23321562-e80d3797-f6b1-4367-92fc-a3fcd660ef42&entityType=collection
 
 
 ### Screen Shots of API and Response
 
-* API to Show average price and availability on a given dates and sort by price
+##### API to Show average price and availability on a given dates and sort by price
 
-API
+* API
 https://drive.google.com/file/d/1D0-Q4QkXZNjO7LLMudCLpbS83cyWn7pc/view?usp=sharing
 
-Response
+* Response
 https://drive.google.com/file/d/10y5zkrgIZt229qcfyEE9U1482v4dSM2e/view?usp=sharing
 
-* API to Show average price and availability on a given dates and sort by availability
+##### API to Show average price and availability on a given dates and sort by availability
 
-API
+* API
 https://drive.google.com/file/d/1w0DLRvn066tFCMMu54oBEkPZgxhtq8Do/view?usp=sharing
 
-Response
+* Response
 https://drive.google.com/file/d/1gM_-I5qaUO6D57Wle5FNRVRb4szxTyjq/view?usp=sharing
 
 
-* API to show the total price and availability of a villa on a given dates
+#####  API to show the total price and availability of a villa on a given dates
 
-https://drive.google.com/file/d/1taIgiluazLIbRo04MrzlvJ-jQWi2MkM_/view?usp=sharing
+* https://drive.google.com/file/d/1taIgiluazLIbRo04MrzlvJ-jQWi2MkM_/view?usp=sharing

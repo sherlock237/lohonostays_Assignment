@@ -1,10 +1,10 @@
 == README
 
-###lohonostays Assignment.
+### lohonostays Assignment.
 
 * Ruby version -- 2.6.10
 
-###Getting Started
+### Getting Started
 
 * Clone this repository
 
@@ -23,25 +23,25 @@ Manually
 * <tt>rails s</tt>
 
 
-###Docker Build
+### Docker Build
 
 * <tt>docker build -t lohonostays .</tt>
 
 * <tt>docker run -p 3000:3000 lohonostays</tt>
 
 
-###Test Case Run
+### Test Case Run
 
 * <tt>bundle exec rspec</tt>
 
 
 
-###Postman API Collection
+### Postman API Collection
 
 * Link: https://elements.getpostman.com/redirect?entityId=23321562-e80d3797-f6b1-4367-92fc-a3fcd660ef42&entityType=collection
 
 
-###Screen Shots of API and Response
+### Screen Shots of API and Response
 
 * API to Show average price and availability on a given dates and sort by price
 
